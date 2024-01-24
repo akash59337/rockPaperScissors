@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        body{
+            background-color: #323232;
+        }
+        .imgContainer{
+            display: flex;
+            /* margin: 25px; */
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        #user{margin: 30px;}
+        #computer{margin: 30px;}
+        img{
+            width: 200px;
+            height: 200px;
+           
+        }
+        button{
+            border-radius: 5px;
+            width: 80px;
+            text-align: center;
+            height: 30px;
+            font-size: 18px;
+        }
+        .comtext{
+          color: white;
+          font-size: 30px;
+          width: 100%;
+          
+          text-align: center;
+        }
+        .usertext{
+          color: white;
+          font-size: 30px;
+          width: 100%;
+          
+          text-align: center;
+        }
+        /* .comtext span{
+            background-color: white;
+            width: 100px;
+            height: 60px;
+        } */
+        .userChoice{
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #00fffb;
+        }
+        .comChoice{
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #00fffb;
+            margin: 10px;
+        }
+        h1{
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgContainer">
+        <div class="comChoice">
+            <h1>Computer</h1>
+            <img src="r.png" alt="rock" id="computer">
+            <p class="comtext"> <span>Computer Choice</span></p>
+           
+        </div>
+        <div class="userChoice">
+            <h1>User</h1>
+            <img src="r.png" alt="rock" id="user" srcset="">
+            <div class="btn">
+                <button>rock</button>
+                <button>paper</button>
+                <button>scissors</button>
+                <p class="usertext"> <span>Your Choice</span></p>
+            </div>
+        </div>
+        <h1 class="result"></h1>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
